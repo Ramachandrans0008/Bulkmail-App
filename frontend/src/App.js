@@ -13,7 +13,7 @@ function App() {
   function send() {
     setstatus(true);
     axios
-      .post(`https://bulkmail-app-backend.onrender.com`, {
+      .post(`https://bulkmail-app-backend.onrender.com/sendmail`, {
         mess: mess,
         emailList: emailList,
       })
